@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 200vh;
+    perspective: 2px;
+    transform-style: preserve-3d;
+    background-color: rgb(36, 36, 36);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+html{
+    overflow: hidden;
+}
+
+.contenedor-1, .espacio{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.contenedor-1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../recursos/Cyberpunk-wallpaper.png");
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.2);
+}
+
+.batman{
+    width: 25%;
+    left: 35%;
+    position: absolute;
+}
+.contenedor-1::after{
+    content: "";
+    width: 20%;
+    height: 20%;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    background-image: url("../recursos/Batwing_-_Promocional.webp");
+    background-size: cover;
+    transform: translateX(10%);
+}
+
+.espacio{
+    height: 200vh;
+    background-color: darkred;
+}
