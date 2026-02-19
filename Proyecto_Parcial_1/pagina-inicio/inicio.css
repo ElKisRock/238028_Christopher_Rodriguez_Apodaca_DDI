@@ -1,0 +1,179 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #111, #222);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #c0392b;
+}
+
+.menu a:hover, .menu a.activo {
+    color: #c0392b;
+}
+
+/* Contenido principal */
+.contenido-principal {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+/* Parallax con css */
+.parallax-css {
+    height: 400px;
+    background-image: url('../pagina-inicio/recursos/Fondo.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.texto-parallax {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 40px;
+    border-radius: 8px;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.texto-parallax:hover {
+    transform: scale(1.05) rotate(1deg);
+}
+
+.galeria {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.galeria h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #e74c3c;
+}
+
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    padding-bottom: 15px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.03) translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.7);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid #c0392b;
+}
+
+.tarjeta h3 {
+    margin: 15px 0 5px;
+    color: #e74c3c;
+}
+
+.tarjeta p {
+    color: #ccc;
+}
+
+/* Parallax con js */
+.parallax-js {
+    height: 500px;
+    background-image: url('../pagina-inicio/recursos/Fondo\ 2.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Capa que se moverá con el scroll */
+.capa-movil {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    transform: translateY(0);
+    will-change: transform;
+}
+
+.capa-movil h2 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+.capa-movil p {
+    font-size: 1.2rem;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+/* Pie de página */
+.pie-pagina {
+    background-color: #000;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: #aaa;
+}

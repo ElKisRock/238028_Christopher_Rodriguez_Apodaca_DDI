@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - Figuras de Acción</title>
+    <link rel="stylesheet" href="compra.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="encabezado">
+        <h1>Tienda de Figuras de Acción</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="../pagina-inicio/inicio.html">Inicio</a></li>
+                <li><a href="../compra/compra.html" class="activo">Compra</a></li>
+                <li><a href="../index.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contenido-compra">
+
+        <!-- Parallax -->
+        <section class="parallax-css-imagen">
+            <div class="texto-encima">
+                <h2>Ofertas exclusivas</h2>
+                <p>Hasta 30% de descuento</p>
+            </div>
+        </section>
+
+        <!-- Sección de productos-->
+        <section class="productos">
+            <h2>Figuras disponibles</h2>
+
+            <!-- Botones de filtrado -->
+            <div class="filtros">
+                <button class="filtro-btn" data-categoria="todo">Todo</button>
+                <button class="filtro-btn" data-categoria="marvel">Marvel</button>
+                <button class="filtro-btn" data-categoria="dc">DC</button>
+                <button class="filtro-btn" data-categoria="anime">Anime</button>
+            </div>
+
+            <!-- Grid de tarjetas de productos -->
+            <div class="grid-productos" id="grid-productos">
+            </div>
+        </section>
+
+        <!-- Parallax 2 -->
+        <section class="parallax-js-imagen" id="parallax-js">
+            <div class="capa-desplazamiento" id="capaDesplazamiento">
+                <h2>Ediciones limitadas</h2>
+                <p>¡No te las pierdas!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <p>Proyecto Parcial - Diseño Digital III</p>
+    </footer>
+
+    <script src="compra.js"></script>
+</body>
+
+</html>
