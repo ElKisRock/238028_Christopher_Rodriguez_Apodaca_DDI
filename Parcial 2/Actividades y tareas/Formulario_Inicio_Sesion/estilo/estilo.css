@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(13, 0, 19);
+    color: #00f7ff;
+}
+
+form {
+    background: black;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 320px;
+}
+
+#textCorreo {
+    text-align: center;
+}
+
+#textContraseña {
+    text-align: center;
+}
+
+label {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #00f7ff;
+    border-radius: 8px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #00f7ff;
+    color: purple;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
