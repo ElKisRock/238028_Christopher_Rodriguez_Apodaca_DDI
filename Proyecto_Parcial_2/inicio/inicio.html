@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio - Monster Hunter Wilds</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+
+<body>
+
+    <!-- Barra superior con usuario, logo y botones -->
+    <header class="barra-superior">
+
+        <!-- Información del usuario -->
+        <div class="info-usuario">
+            <img id="imagenPerfil" class="imagen-perfil">
+            <span id="nombreUsuario"></span>
+        </div>
+
+        <!-- Logo del juego -->
+        <img src="../inicio/recursos/Logo_MHW.webp" class="logo-header">
+
+        <!-- Botones de acciones -->
+        <div>
+            <button id="botonEditarPerfil">Editar Perfil</button>
+            <button id="botonCerrarSesion">Cerrar Sesión</button>
+        </div>
+
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+
+        <h1 class="titulo-principal">Bestiario de Criaturas</h1>
+
+        <!-- Zona para subir JSON (solo admin) -->
+        <div id="seccionAdmin" class="seccion-admin">
+            <input type="file" id="inputJson" accept=".json">
+            <button id="botonCargarJson">Cargar Monstruos</button>
+        </div>
+
+        <!-- Aquí se muestran las tarjetas de monstruos -->
+        <div id="contenedorTarjetas" class="contenedor-tarjetas"></div>
+    </main>
+
+    <footer>
+        Christopher Rodríguez Apodaca<br>
+        Matrícula: 238028
+    </footer>
+
+    <script src="inicio.js"></script>
+</body>
+
+</html>

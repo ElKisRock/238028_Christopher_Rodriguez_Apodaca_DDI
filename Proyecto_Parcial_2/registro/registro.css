@@ -1,0 +1,62 @@
+/* Fondo de la página */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #121212;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Caja principal del registro */
+.contenedor-registro {
+    width: 320px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px black;
+}
+
+/* Campos donde el usuario escribe */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+
+    box-sizing: border-box;
+}
+
+/* Texto y checkbox de administrador */
+label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Botones */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+.logo {
+    width: 250px;
+    margin-bottom: 15px;
+}
