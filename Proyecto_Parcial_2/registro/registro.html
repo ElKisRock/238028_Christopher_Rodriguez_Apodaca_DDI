@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+
+    <!-- Contenedor principal del registro -->
+    <div class="contenedor-registro">
+
+        <!-- Logo del juego -->
+        <img src="recursos/Logo_MHW.webp" class="logo">
+
+        <h2>Crear Cuenta</h2>
+
+        <!-- Formulario para crear cuenta -->
+        <form id="formularioRegistro">
+
+            <!-- Datos del usuario -->
+            <input type="text" id="nombreCompleto" placeholder="Nombre completo" required>
+
+            <input type="email" id="correo" placeholder="Correo" required>
+
+            <input type="password" id="contrasena" placeholder="Contraseña" required>
+
+            <input type="password" id="verificarContrasena" placeholder="Verificar contraseña" required>
+
+            <!-- Texto para subir foto -->
+            <p class="texto-fotoPerfil">Sube tu foto de perfil</p>
+
+            <!-- Input para elegir imagen -->
+            <input type="file" id="fotoPerfil" accept="image/*" required>
+
+            <!-- Opción para cuenta de administrador -->
+            <label>
+                Cuenta de administrador
+                <input type="checkbox" id="esAdministrador">
+            </label>
+
+            <!-- Botón para registrarse -->
+            <button type="submit">Registrarse</button>
+        </form>
+
+        <!-- Botón para volver al inicio de sesión -->
+        <button id="botonIrIniciarSesion">Volver a iniciar sesión</button>
+    </div>
+
+    <script src="registro.js"></script>
+</body>
+
+</html>

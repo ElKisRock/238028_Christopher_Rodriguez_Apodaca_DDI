@@ -1,0 +1,108 @@
+/* Fondo general de la página */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #121212;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Hace que el contenido empuje el footer hacia abajo */
+main {
+    flex: 1;
+}
+
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px;
+    background: #1f1f1f;
+    position: relative;
+}
+
+/* Contenedor del usuario */
+.info-usuario {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Imagen de perfil */
+.imagen-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #ff9800;
+    object-fit: cover;
+}
+
+.logo-header {
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.barra-superior div:last-child {
+    z-index: 1;
+}
+
+button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    background: #ff9800;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e68900;
+}
+
+/* Sección donde el admin sube el JSON */
+.seccion-admin {
+    margin: 20px;
+}
+
+/* Contenedor de todas las tarjetas */
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Tarjeta individual de cada monstruo */
+.tarjeta {
+    width: 200px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+/* Imagen dentro de la tarjeta */
+.tarjeta img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1f1f1f;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.titulo-principal {
+    text-align: center;
+    margin-bottom: 10px;
+}
