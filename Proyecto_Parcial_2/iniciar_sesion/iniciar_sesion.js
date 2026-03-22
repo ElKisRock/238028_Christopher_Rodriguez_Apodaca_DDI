@@ -25,12 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
             );
 
             if (usuarioEncontrado) {
-                // Guardar sesión en sessionStorage (NO localStorage)
+                // Guardar sesión en sessionStorage
                 sessionStorage.setItem("usuarioActivo", JSON.stringify(usuarioEncontrado));
 
                 alert("Bienvenido " + usuarioEncontrado.nombreCompleto);
 
-                // MISMA ruta que ya tenías
                 window.location.href = "index.html";
             } else {
                 alert("Correo o contraseña incorrectos");
