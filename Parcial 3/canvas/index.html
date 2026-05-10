@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas App</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+</head>
+
+<body>
+
+    <div class="barra-herramientas">
+        <button id="btnPincel">Pincel</button>
+        <button id="btnLinea">Línea</button>
+        <button id="btnCuadro">Cuadro</button>
+        <button id="btnCirculo">Círculo</button>
+        <button id="btnFiguraExtra">Figura extra</button>
+        <button id="btnSticker">Sticker</button>
+        <button id="btnBorrador">Borrador</button>
+    </div>
+
+    <div class="controles">
+        <label for="colorLinea">Color de línea:</label>
+        <input type="color" id="colorLinea">
+
+        <label for="colorRelleno">Color de relleno:</label>
+        <input type="color" id="colorRelleno">
+
+        <label for="grosorLinea">Grosor de línea:</label>
+        <input type="range" id="grosorLinea" min="1" max="50">
+
+        <label for="inputArchivo">Selecciona imagen para Sticker:</label>
+        <input type="file" id="inputArchivo" accept="image/*">
+    </div>
+
+    <div class="filtros">
+        <button id="btnBN">Blanco y negro</button>
+        <button id="btnRojos">Escala de rojos</button>
+        <button id="btnVerdes">Escala de verdes</button>
+        <button id="btnAzules">Escala de azules</button>
+        <button id="btnSepia">Sepia</button>
+        <button id="btnOriginal">Colores originales</button>
+    </div>
+
+    <div class="acciones">
+        <button id="btnLimpiar">Limpiar</button>
+        <button id="btnGuardar">Guardar</button>
+        <button id="btnDeshacer">Deshacer</button>
+        <button id="btnRehacer">Rehacer</button>
+    </div>
+
+    <div class="contenedor-lienzo">
+        <canvas id="lienzo" class="lienzo" width="1500" height="900"></canvas>
+    </div>
+
+</body>
+<script type="module" src="js/script.js"></script>
+
+</html>
